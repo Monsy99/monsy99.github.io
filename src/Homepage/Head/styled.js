@@ -64,8 +64,8 @@ const Button = styled.button`
   margin: 0;
   margin-top: 32px;
   border: none;
-  color: white;
-  background: #2188ff;
+  color: ${({ theme }) => theme.white};
+  background: ${({ theme }) => theme.dodgerBlue};
   border: 1px solid rgba(209, 213, 218, 0.1);
   border-radius: 4px;
   font-size: 20px;
@@ -82,7 +82,6 @@ const ButtonImg = styled.img`
   width: 24px;
   height: 24px;
   margin-right: 18px;
-  background: #2188ff;
 `;
 
 export { Container, Portrait, Caption, Button, Name, ButtonImg, Description };
