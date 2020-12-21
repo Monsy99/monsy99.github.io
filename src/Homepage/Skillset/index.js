@@ -19,7 +19,7 @@ const Skillset = () => {
         <List>
           {skills.map((skill) => {
             return (
-              <Item>
+              <Item key={skill.valueOf()}>
                 <Bullet src={bulletImg} alt="" />
                 {skill.valueOf()}
               </Item>
