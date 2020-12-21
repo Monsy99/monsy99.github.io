@@ -5,7 +5,7 @@ const Container = styled.section`
   font-family: "Inter", sans-serif;
   display: grid;
   grid-template-columns: auto 1fr;
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     grid-template-columns: auto;
     margin: 0 16px;
     margin-top: 21px;
@@ -18,7 +18,7 @@ const Portrait = styled.img`
   border-radius: 50%;
   margin-right: 66px;
   display: block;
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     margin-right: 0px;
     width: 220px;
     height: 220px;
@@ -30,7 +30,7 @@ const Caption = styled.p`
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     margin-top: 12px;
     letter-spacing: 0.05em;
   }
@@ -41,7 +41,7 @@ const Name = styled.h1`
   font-size: 38px;
   font-weight: 700;
   letter-spacing: 0.03em;
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     margin-top: 8px;
     font-size: 22px;
     letter-spacing: 0.05em;
@@ -52,7 +52,7 @@ const Description = styled.p`
   margin-top: 35px;
   font-size: 20px;
   letter-spacing: 0.03em;
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     margin-top: 16px;
     font-size: 17px;
     letter-spacing: 0.03em;
@@ -64,15 +64,15 @@ const Button = styled.button`
   margin: 0;
   margin-top: 32px;
   border: none;
-  color: ${({ theme }) => theme.white};
-  background: ${({ theme }) => theme.dodgerBlue};
+  color: ${({ theme }) => theme.color.white};
+  background: ${({ theme }) => theme.color.dodgerBlue};
   border: 1px solid rgba(209, 213, 218, 0.1);
   border-radius: 4px;
   font-size: 20px;
   letter-spacing: 0.05em;
   display: flex;
   align-items: center;
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     margin-top: 24px;
     font-size: 18px;
     line-height: 22px;
