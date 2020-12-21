@@ -5,7 +5,7 @@ export const GlobalStyle = createGlobalStyle`
      box-sizing: border-box;
 }
 body{
-    color:${({ theme }) => theme.white};
-    background-color:${({ theme }) => theme.mineSchaft};
+    color:${({ theme }) => theme.color.white};
+    background-color:${({ theme }) => theme.color.mineSchaft};
 }
 `;
