@@ -32,7 +32,7 @@ const Caption = styled.p`
   text-transform: uppercase;
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     margin-top: 12px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
   }
 `;
 const Name = styled.h1`
@@ -44,7 +44,7 @@ const Name = styled.h1`
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     margin-top: 8px;
     font-size: 22px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
   }
 `;
 const Description = styled.p`
@@ -69,7 +69,7 @@ const Button = styled.button`
   border: 1px solid rgba(209, 213, 218, 0.1);
   border-radius: 4px;
   font-size: 20px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   display: flex;
   align-items: center;
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
