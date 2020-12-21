@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.js": "/static/js/main.f052e4e4.chunk.js",
-    "main.js.map": "/static/js/main.f052e4e4.chunk.js.map",
+    "main.js": "/static/js/main.0174dafd.chunk.js",
+    "main.js.map": "/static/js/main.0174dafd.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.cc9b788f.js",
     "runtime-main.js.map": "/static/js/runtime-main.cc9b788f.js.map",
-    "static/js/2.6b071485.chunk.js": "/static/js/2.6b071485.chunk.js",
-    "static/js/2.6b071485.chunk.js.map": "/static/js/2.6b071485.chunk.js.map",
+    "static/js/2.35cea687.chunk.js": "/static/js/2.35cea687.chunk.js",
+    "static/js/2.35cea687.chunk.js.map": "/static/js/2.35cea687.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.6b071485.chunk.js.LICENSE.txt": "/static/js/2.6b071485.chunk.js.LICENSE.txt",
+    "static/js/2.35cea687.chunk.js.LICENSE.txt": "/static/js/2.35cea687.chunk.js.LICENSE.txt",
     "static/media/Message.b5d25eb0.svg": "/static/media/Message.b5d25eb0.svg",
     "static/media/Szymon_prof.19ed32af.jpg": "/static/media/Szymon_prof.19ed32af.jpg",
+    "static/media/gh_logo.d22cbb6d.svg": "/static/media/gh_logo.d22cbb6d.svg",
     "static/media/list_bullet.9b75199c.svg": "/static/media/list_bullet.9b75199c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.cc9b788f.js",
-    "static/js/2.6b071485.chunk.js",
-    "static/js/main.f052e4e4.chunk.js"
+    "static/js/2.35cea687.chunk.js",
+    "static/js/main.0174dafd.chunk.js"
   ]
 }
