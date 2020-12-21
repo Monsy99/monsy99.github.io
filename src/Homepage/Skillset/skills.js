@@ -21,4 +21,12 @@ const skills = [
   "React",
   "Git",
 ];
-export default skills;
+const learnNext = [
+  "React Context",
+  "Node.js",
+  "Cypress",
+  "Unit testing",
+  "TypeScript",
+  "JS classes",
+];
+export { skills, learnNext };
