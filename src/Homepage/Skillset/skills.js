@@ -24,7 +24,7 @@ const skills = [
 const learnNext = [
   "React Context",
   "Node.js",
-  "Cypress",
+  "React Native",
   "Unit testing",
   "TypeScript",
   "JS classes",
