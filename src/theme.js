@@ -6,6 +6,7 @@ const theme = {
   },
   breakpoint: {
     mobile: "767px",
+    iPad: "1024px",
   },
 };
 export default theme;
