@@ -43,6 +43,9 @@ const List = styled.ul`
   list-style: none;
   margin-top: 32px;
   margin-bottom: -8px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.iPad}) {
+    columns: 2;
+  }
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     columns: 1;
     margin-top: 12px;
