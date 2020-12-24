@@ -22,7 +22,7 @@ const Header = styled.h2`
   margin: 0;
   font-size: 30px;
   line-height: 36px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     font-size: 18px;
     line-height: 22px;
