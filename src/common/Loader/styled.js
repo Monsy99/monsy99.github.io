@@ -15,4 +15,15 @@ const LoaderCircle = styled.img`
     }
   }
 `;
-export { LoaderCircle };
+
+const LoaderHeader = styled.header`
+  display: block;
+  margin: 0 auto;
+  margin-top: 88px;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  font-family: "Inter", sans-serif;
+`;
+
+export { LoaderCircle, LoaderHeader };

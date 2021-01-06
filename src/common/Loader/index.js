@@ -1,7 +1,12 @@
 import loadingCircle from "./loader.svg";
-import { LoaderCircle } from "./styled";
+import { LoaderCircle, LoaderHeader } from "./styled";
 
-const Loader = () => {
-  return <LoaderCircle src={loadingCircle}></LoaderCircle>;
+const Loader = ({ headerContent }) => {
+  return (
+    <>
+      <LoaderHeader>{headerContent}</LoaderHeader>
+      <LoaderCircle src={loadingCircle}></LoaderCircle>
+    </>
+  );
 };
 export { Loader };
