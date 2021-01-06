@@ -3,14 +3,18 @@ import theme from "./theme";
 import Homepage from "./Homepage";
 import { GlobalStyle } from "./GlobalStyle";
 import Projects from "./Homepage/Projects";
+import store from "./store";
+import { Provider } from "react-redux";
 
 function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <Homepage></Homepage>
-        <Projects></Projects>
+        <Provider store={store}>
+          <GlobalStyle />
+          <Homepage></Homepage>
+          <Projects></Projects>
+        </Provider>
       </ThemeProvider>
     </div>
   );
