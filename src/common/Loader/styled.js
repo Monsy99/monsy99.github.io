@@ -6,6 +6,7 @@ const LoaderCircle = styled.img`
   margin: 0 auto;
   margin-top: 48px;
   animation: spin 1s infinite;
+  margin-bottom: 500px;
   @keyframes spin {
     0% {
       transform: rotate(0deg);
