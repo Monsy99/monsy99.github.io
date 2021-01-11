@@ -8,6 +8,9 @@ const Section = styled.section`
 `;
 const GithubLogo = styled.img`
   width: 40px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    width: 32px;
+  }
 `;
 const Header = styled.h2`
   font-family: "Inter", sans-serif;
@@ -19,6 +22,12 @@ const Header = styled.h2`
   color: ${({ theme }) => theme.color.white};
   margin: 0;
   margin-top: 13px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+  }
 `;
 
 const Subheader = styled.p`
@@ -29,6 +38,10 @@ const Subheader = styled.p`
   letter-spacing: 0.03em;
   margin: 0;
   margin-top: 8px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    margin-top: 16px;
+    font-size: 17px;
+  }
 `;
 
 export { Section, GithubLogo, Header, Subheader };
