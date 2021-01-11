@@ -2,6 +2,7 @@ import {
   Description,
   Email,
   Header,
+  Section,
   SocialMedia,
   SocialMediaIcon,
 } from "./styled";
@@ -11,7 +12,7 @@ import linkedIn from "./images/linkedInLight.svg";
 
 const Contact = () => {
   return (
-    <div>
+    <Section>
       <Header>Let's talk!</Header>
       <Email>szymon.marczukk@gmail.com</Email>
       <Description>
@@ -30,7 +31,7 @@ const Contact = () => {
           <SocialMediaIcon src={linkedIn}></SocialMediaIcon>
         </a>
       </SocialMedia>
-    </div>
+    </Section>
   );
 };
 export default Contact;
