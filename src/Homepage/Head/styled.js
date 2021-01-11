@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
-const Container = styled.section`
+const Section = styled.section`
+  margin: 0;
+  padding: 0;
   margin-top: 120px;
   font-family: "Inter", sans-serif;
   display: grid;
   grid-template-columns: auto 1fr;
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     grid-template-columns: auto;
-    margin: 0 16px;
     margin-top: 21px;
   }
 `;
@@ -84,4 +85,4 @@ const ButtonImg = styled.img`
   margin-right: 18px;
 `;
 
-export { Container, Portrait, Caption, Button, Name, ButtonImg, Description };
+export { Section, Portrait, Caption, Button, Name, ButtonImg, Description };

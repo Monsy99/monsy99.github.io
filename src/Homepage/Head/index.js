@@ -2,7 +2,7 @@ import {
   Button,
   ButtonImg,
   Caption,
-  Container,
+  Section,
   Description,
   Name,
   Portrait,
@@ -13,7 +13,7 @@ import ThemeToggleButton from "./ThemeToggleButton";
 
 const Head = () => {
   return (
-    <Container>
+    <Section>
       <Portrait src={portraitImg}></Portrait>
       <div>
         <ThemeToggleButton></ThemeToggleButton>
@@ -28,7 +28,7 @@ const Head = () => {
           Hire me
         </Button>
       </div>
-    </Container>
+    </Section>
   );
 };
 export default Head;

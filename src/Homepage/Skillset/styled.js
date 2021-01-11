@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
-const Section = styled.div`
+const Section = styled.section`
+  margin: 0;
+  padding: 0;
   margin-top: 62px;
   font-family: "Inter", sans-serif;
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
-    margin: 0 16px;
     margin-top: 48px;
   }
 `;
