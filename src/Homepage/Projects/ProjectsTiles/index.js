@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
+import { useTheme } from "styled-components";
 import {
   selectProjectsData,
   selectLoading,
@@ -21,7 +22,8 @@ const ProjectTiles = () => {
   if (!projects) {
     dispatch(startFetchProjects());
   }
-
+  const theme = useTheme();
+  const mobile = window.innerWidth < parseInt(theme.breakpoint.mobile);
   if (loading) {
     return (
       <>
@@ -40,7 +42,7 @@ const ProjectTiles = () => {
               <Info>
                 Demo:&nbsp;
                 <Ref href={project.html_url} target="_blank" rel="noreferrer">
-                  {project.html_url}
+                  {mobile ? "Open code" : project.html_url}
                 </Ref>
               </Info>
               <Info>
@@ -50,7 +52,9 @@ const ProjectTiles = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  {`https://monsy99.github.io/${project.name}`}
+                  {mobile
+                    ? "Open preview"
+                    : `https://monsy99.github.io/${project.name}`}
                 </Ref>
               </Info>
             </ProjectTile>
