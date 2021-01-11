@@ -3,14 +3,10 @@ import { createSlice } from "@reduxjs/toolkit";
 const projectsSlice = createSlice({
   name: "projects",
   initialState: {
-    darkTheme: true,
     projects: null,
     loading: false,
   },
   reducers: {
-    switchTheme: (state) => {
-      state.darkTheme = !state.darkTheme;
-    },
     startFetchProjects: (state) => {
       state.loading = true;
     },
@@ -22,10 +18,9 @@ const projectsSlice = createSlice({
 });
 
 export const selectProjects = (state) => state.projects;
-export const selectDarkTheme = (state) => state.darkTheme;
+
 export const selectLoading = (state) => state.loading;
 export const {
-  switchTheme,
   startFetchProjects,
   fetchProjectsSuccess,
 } = projectsSlice.actions;
