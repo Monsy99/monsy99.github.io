@@ -18,8 +18,9 @@ const projectsSlice = createSlice({
 });
 
 export const selectProjects = (state) => state.projects;
+export const selectProjectsData = (state) => selectProjects(state).projects;
+export const selectLoading = (state) => selectProjects(state).loading;
 
-export const selectLoading = (state) => state.loading;
 export const {
   startFetchProjects,
   fetchProjectsSuccess,

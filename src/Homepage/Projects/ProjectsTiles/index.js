@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import {
-  selectProjects,
+  selectProjectsData,
   selectLoading,
   startFetchProjects,
 } from "../../../api/projectsSlice";
@@ -17,9 +17,8 @@ import {
 
 const ProjectTiles = () => {
   const dispatch = useDispatch();
-  const projects = useSelector(selectProjects);
+  const projects = useSelector(selectProjectsData);
   const loading = useSelector(selectLoading);
-  console.log(!projects);
   if (!projects) {
     dispatch(startFetchProjects());
   }

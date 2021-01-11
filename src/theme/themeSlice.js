@@ -11,7 +11,7 @@ const themeSlice = createSlice({
     },
   },
 });
-
-export const selectDarkTheme = (state) => state.darkTheme;
+export const selectTheme = (state) => state.theme;
+export const selectDarkTheme = (state) => selectTheme(state).darkTheme;
 export const { switchTheme } = themeSlice.actions;
 export default themeSlice.reducer;
