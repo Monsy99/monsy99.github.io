@@ -41,20 +41,20 @@ const ProjectTiles = () => {
               <Description>{project.description}</Description>
               <Info>
                 Demo:&nbsp;
-                <Ref href={project.html_url} target="_blank" rel="noreferrer">
-                  {mobile ? "Open code" : project.html_url}
-                </Ref>
-              </Info>
-              <Info>
-                Code:&nbsp;
                 <Ref
                   href={`https://monsy99.github.io/${project.name}`}
                   target="_blank"
                   rel="noreferrer"
                 >
                   {mobile
-                    ? "Open preview"
+                    ? "Open code"
                     : `https://monsy99.github.io/${project.name}`}
+                </Ref>
+              </Info>
+              <Info>
+                Code:&nbsp;
+                <Ref href={project.html_url} target="_blank" rel="noreferrer">
+                  {mobile ? "Open preview" : project.html_url}
                 </Ref>
               </Info>
             </ProjectTile>
