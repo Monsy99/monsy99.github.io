@@ -6,10 +6,10 @@ import { useSelector } from "react-redux";
 import { selectDarkTheme } from "./theme/themeSlice";
 
 function App() {
-  const darkTheme = useSelector(selectDarkTheme);
+  const isDark = useSelector(selectDarkTheme);
   return (
     <div className="App">
-      <ThemeProvider theme={darkTheme ? theme : lightTheme}>
+      <ThemeProvider theme={isDark ? theme : lightTheme}>
         <GlobalStyle />
         <Homepage></Homepage>
       </ThemeProvider>
