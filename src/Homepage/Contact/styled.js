@@ -12,7 +12,7 @@ const Header = styled.header`
   font-size: 12px;
   line-height: 130%;
   text-transform: uppercase;
-  color: ${({ theme }) => theme.color.white};
+  color: ${({ theme }) => theme.color.contact.header};
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     font-size: 12px;
     line-height: 130%;
@@ -23,7 +23,7 @@ const Description = styled.p`
   font-size: 18px;
   line-height: 140%;
   letter-spacing: 0.05em;
-  color: ${({ theme }) => theme.color.white};
+  color: ${({ theme }) => theme.color.contact.description};
   margin-top: 24px;
   max-width: 60%;
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
@@ -39,7 +39,7 @@ const Email = styled.p`
   font-size: 32px;
   line-height: 39px;
   letter-spacing: 0.05em;
-  color: ${({ theme }) => theme.color.white};
+  color: ${({ theme }) => theme.color.contact.email};
   margin-top: 24px;
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     font-weight: 900;
