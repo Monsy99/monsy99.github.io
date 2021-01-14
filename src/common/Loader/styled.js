@@ -20,6 +20,7 @@ const LoaderCircle = styled.img`
 const LoaderHeader = styled.header`
   display: block;
   margin: 0 auto;
+  color: ${({ theme }) => theme.color.loader.header};
   margin-top: 88px;
   font-size: 20px;
   line-height: 140%;
