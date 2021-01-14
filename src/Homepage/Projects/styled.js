@@ -19,7 +19,7 @@ const Header = styled.h2`
   font-size: 30px;
   line-height: 36px;
   letter-spacing: 0.03em;
-  color: ${({ theme }) => theme.color.white};
+  color: ${({ theme }) => theme.color.projects.mainHeader};
   margin: 0;
   margin-top: 13px;
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
@@ -34,7 +34,7 @@ const Subheader = styled.p`
   font-family: "Inter", sans-serif;
   font-size: 20px;
   line-height: 140%;
-  color: ${({ theme }) => theme.color.white};
+  color: ${({ theme }) => theme.color.projects.mainHeader};
   letter-spacing: 0.03em;
   margin: 0;
   margin-top: 8px;

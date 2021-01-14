@@ -10,7 +10,7 @@ const Section = styled.section`
   }
 `;
 const Container = styled.div`
-  background-color: rgba(54, 54, 54, 0.72);
+  background-color: ${({ theme }) => theme.color.skillset.background};
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
     0px 16px 58px rgba(9, 10, 51, 0.03);
   border-radius: 4px;
@@ -24,6 +24,7 @@ const Header = styled.h2`
   font-size: 30px;
   line-height: 36px;
   letter-spacing: 0.03em;
+  color: ${({ theme }) => theme.color.skillset.header};
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     font-size: 18px;
     line-height: 22px;
@@ -31,7 +32,7 @@ const Header = styled.h2`
 `;
 const Separator = styled.hr`
   margin-top: 15px;
-  border-color: rgba(209, 213, 218, 0.1);
+  border-color: ${({ theme }) => theme.color.skillset.separator};
   border-style: solid;
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     margin-top: 12px;
@@ -58,6 +59,7 @@ const Item = styled.li`
   line-height: 1.4;
   letter-spacing: 0.03em;
   margin-bottom: 8px;
+  color: ${({ theme }) => theme.color.skillset.item};
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     font-size: 14px;
     line-height: 17px;

@@ -35,8 +35,7 @@ const Slider = styled.span`
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
+  background-color: ${({ theme }) => theme.color.head.toggleBackground};
   transition: 0.4s;
   border-radius: 34px;
   &::before {

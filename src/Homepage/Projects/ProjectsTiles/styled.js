@@ -12,7 +12,7 @@ const ProjectsWrapper = styled.div`
 `;
 const ProjectTile = styled.div`
   margin: 0;
-  background: rgba(54, 54, 54, 0.72);
+  background: ${({ theme }) => theme.color.projects.background};
   border: 6px solid rgba(209, 213, 218, 0.1);
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
     0px 16px 58px rgba(9, 10, 51, 0.03);
@@ -31,6 +31,7 @@ const Header = styled.h2`
   font-size: 24px;
   line-height: 29px;
   letter-spacing: 0.05em;
+  color: ${({ theme }) => theme.color.projects.header};
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     font-size: 16px;
     line-height: 19px;
@@ -46,7 +47,7 @@ const Description = styled.p`
   font-size: 18px;
   line-height: 140%;
   letter-spacing: 0.03em;
-  color: ${({ theme }) => theme.color.white};
+  color: ${({ theme }) => theme.color.projects.description};
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     font-size: 14px;
     line-height: 17px;
@@ -64,8 +65,8 @@ const Info = styled.p`
   font-size: 18px;
   line-height: 140%;
   letter-spacing: 0.05em;
-  color: ${({ theme }) => theme.color.white};
   overflow-wrap: wrap;
+  color: ${({ theme }) => theme.color.projects.info};
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     font-size: 14px;
     line-height: 17px;
@@ -76,6 +77,6 @@ const Info = styled.p`
 const Ref = styled.a`
   overflow-wrap: wrap;
   word-wrap: break-word;
-  color: ${({ theme }) => theme.color.dodgerBlue};
+  color: ${({ theme }) => theme.color.projects.ref};
 `;
 export { Info, Ref, Description, Header, ProjectTile, ProjectsWrapper };

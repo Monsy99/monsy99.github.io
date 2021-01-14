@@ -31,6 +31,7 @@ const Caption = styled.p`
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
+  color: ${({ theme }) => theme.color.head.caption};
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     margin-top: 12px;
     letter-spacing: 0.03em;
@@ -42,6 +43,7 @@ const Name = styled.h1`
   font-size: 38px;
   font-weight: 700;
   letter-spacing: 0.03em;
+  color: ${({ theme }) => theme.color.head.name};
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     margin-top: 8px;
     font-size: 22px;
@@ -53,6 +55,7 @@ const Description = styled.p`
   margin-top: 35px;
   font-size: 20px;
   letter-spacing: 0.03em;
+  color: ${({ theme }) => theme.color.head.description};
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     margin-top: 16px;
     font-size: 17px;
@@ -65,8 +68,8 @@ const Button = styled.button`
   margin: 0;
   margin-top: 32px;
   border: none;
-  color: ${({ theme }) => theme.color.white};
-  background: ${({ theme }) => theme.color.dodgerBlue};
+  color: ${({ theme }) => theme.color.head.buttonText};
+  background: ${({ theme }) => theme.color.head.buttonBackground};
   border: 1px solid rgba(209, 213, 218, 0.1);
   border-radius: 4px;
   font-size: 20px;
