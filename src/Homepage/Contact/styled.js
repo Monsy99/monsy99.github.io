@@ -33,14 +33,20 @@ const Description = styled.p`
     max-width: unset;
   }
 `;
-const Email = styled.p`
+const Email = styled.a`
+  display: block;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 39px;
   letter-spacing: 0.05em;
+  transition: color 0.3s;
   color: ${({ theme }) => theme.color.contact.email};
   margin-top: 24px;
+  cursor: pointer;
+  &:hover {
+    color: ${({ theme }) => theme.color.contact.emailHover};
+  }
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     font-weight: 900;
     font-size: 18px;
@@ -60,6 +66,10 @@ const SocialMedia = styled.div`
 const SocialMediaIcon = styled.img`
   width: 48px;
   margin-right: 24px;
+  transition: filter 0.3s;
+  &:hover {
+    filter: brightness(0.75);
+  }
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     width: 32px;
     margin-right: 16px;

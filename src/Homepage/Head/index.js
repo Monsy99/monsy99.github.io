@@ -5,6 +5,7 @@ import {
   Section,
   Description,
   Name,
+  Mailto,
   Portrait,
 } from "./styled";
 import portraitImg from "../../images/Szymon_prof.jpg";
@@ -23,10 +24,12 @@ const Head = () => {
           👨🏻‍💻 I’m a passionate Frontend Developer in love with React, currently
           looking for new job opportunities
         </Description>
-        <Button>
-          <ButtonImg src={buttonImg}></ButtonImg>
-          Hire me
-        </Button>
+        <Mailto href="mailto:szymon.marczukk@gmail.com">
+          <Button>
+            <ButtonImg src={buttonImg}></ButtonImg>
+            Hire me
+          </Button>
+        </Mailto>
       </div>
     </Section>
   );

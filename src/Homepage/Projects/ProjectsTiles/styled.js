@@ -18,6 +18,10 @@ const ProjectTile = styled.div`
     0px 16px 58px rgba(9, 10, 51, 0.03);
   border-radius: 4px;
   padding: 56px;
+  transition: border 0.3s;
+  &:hover {
+    border: ${({ theme }) => theme.color.projects.tileBorderHover};
+  }
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     padding: 24px;
   }
@@ -77,6 +81,14 @@ const Info = styled.p`
 const Ref = styled.a`
   overflow-wrap: wrap;
   word-wrap: break-word;
+  transition: all 0.3s;
+  line-height: 140%;
+  text-decoration: none;
+  border-bottom: 1px solid ${({ theme }) => theme.color.projects.ref};
   color: ${({ theme }) => theme.color.projects.ref};
+  &:hover {
+    color: ${({ theme }) => theme.color.projects.refHover};
+    border-bottom: 1px solid ${({ theme }) => theme.color.projects.refHover};
+  }
 `;
 export { Info, Ref, Description, Header, ProjectTile, ProjectsWrapper };

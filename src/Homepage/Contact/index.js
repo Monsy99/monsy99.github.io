@@ -19,7 +19,7 @@ const Contact = () => {
   const isDark = useSelector(selectDarkTheme);
   return (
     <Section>
-      <Header>Let's talk!</Header>
+      <Header href="mailto:szymon.marczukk@gmail.com">Let's talk!</Header>
       <Email>szymon.marczukk@gmail.com</Email>
       <Description>
         I’m always open to new projects whenever I have the time. If you have a

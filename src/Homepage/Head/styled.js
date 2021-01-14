@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+const Mailto = styled.a`
+  text-decoration: none;
+`;
 const Section = styled.section`
   margin: 0;
   padding: 0;
@@ -76,6 +79,11 @@ const Button = styled.button`
   letter-spacing: 0.03em;
   display: flex;
   align-items: center;
+  transition: box-shadow 0.3s;
+  &:hover {
+    cursor: pointer;
+    box-shadow: ${({ theme }) => theme.color.head.buttonHover};
+  }
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     margin-top: 24px;
     font-size: 18px;
@@ -88,4 +96,13 @@ const ButtonImg = styled.img`
   margin-right: 18px;
 `;
 
-export { Section, Portrait, Caption, Button, Name, ButtonImg, Description };
+export {
+  Section,
+  Portrait,
+  Mailto,
+  Caption,
+  Button,
+  Name,
+  ButtonImg,
+  Description,
+};
