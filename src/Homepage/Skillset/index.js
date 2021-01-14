@@ -8,9 +8,13 @@ import {
   Bullet,
 } from "./styled";
 import bulletImg from "../../images/list_bullet.svg";
+import bulletImgLight from "../../images/list_bullet_light.svg";
 import { skills, learnNext } from "./skills";
+import { useSelector } from "react-redux";
+import { selectDarkTheme } from "../../theme/themeSlice";
 
 const Skillset = () => {
+  const isDark = useSelector(selectDarkTheme);
   return (
     <>
       <Section>
@@ -21,7 +25,7 @@ const Skillset = () => {
             {skills.map((skill) => {
               return (
                 <Item key={skill.valueOf()}>
-                  <Bullet src={bulletImg} alt="" />
+                  <Bullet src={isDark ? bulletImg : bulletImgLight} alt="" />
                   {skill.valueOf()}
                 </Item>
               );
@@ -37,7 +41,7 @@ const Skillset = () => {
             {learnNext.map((skill) => {
               return (
                 <Item key={skill.valueOf()}>
-                  <Bullet src={bulletImg} alt="" />
+                  <Bullet src={isDark ? bulletImg : bulletImgLight} alt="" />
                   {skill.valueOf()}
                 </Item>
               );
