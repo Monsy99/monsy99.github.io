@@ -6,11 +6,17 @@ import {
   SocialMedia,
   SocialMediaIcon,
 } from "./styled";
-import github from "./images/githubLight.svg";
-import facebook from "./images/facebookLight.svg";
-import linkedIn from "./images/linkedInLight.svg";
+import { selectDarkTheme } from "../../theme/themeSlice";
+import github from "./images/github.svg";
+import facebook from "./images/facebook.svg";
+import linkedIn from "./images/linkedIn.svg";
+import githubLight from "./images/githubLight.svg";
+import facebookLight from "./images/facebookLight.svg";
+import linkedInLight from "./images/linkedInLight.svg";
+import { useSelector } from "react-redux";
 
 const Contact = () => {
+  const isDark = useSelector(selectDarkTheme);
   return (
     <Section>
       <Header>Let's talk!</Header>
@@ -22,13 +28,19 @@ const Contact = () => {
       </Description>
       <SocialMedia>
         <a href="https://github.com/Monsy99">
-          <SocialMediaIcon src={github}></SocialMediaIcon>{" "}
+          <SocialMediaIcon
+            src={isDark ? github : githubLight}
+          ></SocialMediaIcon>{" "}
         </a>
         <a href="https://www.facebook.com/szymon.marczuk.395/">
-          <SocialMediaIcon src={facebook}></SocialMediaIcon>
+          <SocialMediaIcon
+            src={isDark ? facebook : facebookLight}
+          ></SocialMediaIcon>
         </a>
         <a href="https://www.linkedin.com/in/szymon-marczuk-819536175/">
-          <SocialMediaIcon src={linkedIn}></SocialMediaIcon>
+          <SocialMediaIcon
+            src={isDark ? linkedIn : linkedInLight}
+          ></SocialMediaIcon>
         </a>
       </SocialMedia>
     </Section>
