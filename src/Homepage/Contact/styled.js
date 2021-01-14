@@ -25,10 +25,12 @@ const Description = styled.p`
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.white};
   margin-top: 24px;
+  max-width: 60%;
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     font-size: 14px;
     line-height: 17px;
     margin-top: 12px;
+    max-width: unset;
   }
 `;
 const Email = styled.p`
